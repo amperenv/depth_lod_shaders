@@ -32,7 +32,7 @@ void renderLoop()
 
         updateInterpolation();
 
-        // Використовуйте currentPipeline для малювання
+        // Використовуйте currentPipeline для рендеру кадра
         vkCmdBindPipeline(commandBuffer, VK_PIPELINE_BIND_POINT_GRAPHICS, currentPipeline);
         drawFrame();
     }
